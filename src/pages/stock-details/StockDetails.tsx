@@ -1,5 +1,6 @@
-import { Navigate, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import {  useAppSelector } from '../../app/hooks';
+import NotFound from '../../components/not-found/NotFound';
 
 
 const StockDetails = () => {
@@ -10,7 +11,7 @@ const StockDetails = () => {
 
   
   if (stockDetails === undefined) {
-    return <Navigate to="/" />;
+    return <NotFound/>;
   }
  
   

@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        padding: 8px;
+        margin: 8px;
+        border: 1px solid dodgerblue;
+        border-radius: 8px;
+        transition: 0.5s;
+
+        &:hover {
+            color: white;
+            background-color: dodgerblue;
+            border: 2px solid white;
+        }
+
+
+    }
+
+    .active {
+        color: white;
+        background-color: dodgerblue;
+        border: 2px solid white;
+    }
+
+    .brand {
+        border: 2px solid dodgerblue;
+    }
+}
+
+.spacer {
+    // אם יש שטח פנוי - האלמנט הזה יגדל
+    // משמש כמו קפיץ שנמתח כדי לתפוס את כל השטח העודף
+    flex-grow: 1;
+}

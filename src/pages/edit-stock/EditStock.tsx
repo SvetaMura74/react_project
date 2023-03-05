@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import NotFound from "../../components/not-found/NotFound";
 import { Stock, editStock } from "../../features/stocks/stocksSlice";
 
 const EditStock = () => {
@@ -18,7 +19,7 @@ const EditStock = () => {
   );
 
   if (stockToEdit === undefined) {
-    return <Navigate to="/" />;
+    return <NotFound />;
   }
   return (
     <div className="card d-flex p-3 m-3">
@@ -32,6 +33,7 @@ const EditStock = () => {
           setTicker(e.currentTarget.value);
         }}
         placeholder="Symbol ticker"
+        
       />
 
       <hr />
@@ -64,6 +66,7 @@ const EditStock = () => {
         }}
         placeholder=" Stock Exchange Name"
       />
+      <br />
       <button
         className="btn btn-success"
         onClick={() => {
