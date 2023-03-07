@@ -2,10 +2,12 @@
 import { useAppSelector } from "../../app/hooks";
 import AddStock from "../../components/add-stock/AddStock";
 import StockListHeader from "../../components/header/StockListHeader";
+
 import StockItem from "../stock-item/StockItem";
 
 const StockList = () => {
   const stocks = useAppSelector((state) => state.stocks.stocks);
+ 
   return (
     <>
       <AddStock />

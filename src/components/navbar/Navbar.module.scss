@@ -5,11 +5,13 @@
 
     a {
         text-decoration: none;
+        text-align: center;
         padding: 8px;
         margin: 8px;
         border: 1px solid dodgerblue;
         border-radius: 8px;
         transition: 0.5s;
+        width: 120px;
 
         &:hover {
             color: white;

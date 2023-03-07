@@ -1,3 +1,8 @@
+import {Stock} from './../features/stocks/stocksSlice'
+export type StockListProps = {
+  stocks: Stock[];
+};
+
 export type Intraday = {
   date: string;
   ticker: string;
@@ -18,3 +23,5 @@ export type Interval =
   | "month"
   | "quarter"
   | "year";
+
+  export type InputChangeEvent = React.ChangeEvent<HTMLInputElement>;

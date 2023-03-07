@@ -17,7 +17,7 @@ const StockDetails = () => {
   
   return (
     <>
-      <div className="w-75 shadow-lg my-5  border-light border-5 rounded  p-3 d-flex flex-column align-items-center">
+      <div className=" container w-75 shadow-lg my-5  border-light border-5 rounded  p-3 d-flex flex-column align-items-center">
         <h3>The details </h3>
         <p>Ticker: {stockDetails.ticker}</p>
         <p>Name: {stockDetails.name}</p>

@@ -7,6 +7,7 @@ const Navbar = () => {
     { path: "/", text: "Stocks List" },
     { path: "/intraday", text: "Intraday Rates" },
     { path: "/about", text: "About Us" },
+    { path: "/search", text: "Search..." },
    
   ];
 

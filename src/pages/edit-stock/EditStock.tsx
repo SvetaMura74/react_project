@@ -23,7 +23,7 @@ const EditStock = () => {
   }
   return (
     <div className="card d-flex p-3 m-3">
-      <h3>Edit Stock Details</h3>
+      <h3 className="text-center">Edit Stock Details</h3>
 
       <label htmlFor="ticker">Symbol ticker:</label>
       <input
@@ -33,7 +33,6 @@ const EditStock = () => {
           setTicker(e.currentTarget.value);
         }}
         placeholder="Symbol ticker"
-        
       />
 
       <hr />
@@ -67,22 +66,24 @@ const EditStock = () => {
         placeholder=" Stock Exchange Name"
       />
       <br />
-      <button
-        className="btn btn-success"
-        onClick={() => {
-          const stock: Stock = {
-            id: stockToEdit.id,
-            ticker: ticker,
-            name: name,
-            exchange_long: exchange_long,
-            currency: currency,
-          };
-          dispatch(editStock(stock));
-          nav(-1);
-        }}
-      >
-        Save the changes
-      </button>
+      <div className="d-flex justify-content-center">
+        <button
+          className="btn btn-success"
+          onClick={() => {
+            const stock: Stock = {
+              id: stockToEdit.id,
+              ticker: ticker,
+              name: name,
+              exchange_long: exchange_long,
+              currency: currency,
+            };
+            dispatch(editStock(stock));
+            nav(-1);
+          }}
+        >
+          Save the changes
+        </button>
+      </div>
     </div>
   );
 };
