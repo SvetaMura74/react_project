@@ -2,13 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import css from "./Navbar.module.scss";
 
+
 const Navbar = () => {
+
   const arr = [
     { path: "/", text: "Stocks List" },
     { path: "/intraday", text: "Intraday Rates" },
     { path: "/about", text: "About Us" },
     { path: "/search", text: "Search..." },
-   
   ];
 
   const navLink = (route: { path: string; text: string }) => (
@@ -25,6 +26,7 @@ const Navbar = () => {
           {navLink(route)}
         </React.Fragment>
       ))}
+     
     </nav>
   );
 };
