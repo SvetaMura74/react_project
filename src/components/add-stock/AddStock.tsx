@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "react-modal";
-import{GrClose} from "react-icons/gr"
+import { GrClose } from "react-icons/gr";
 import { useAppDispatch } from "../../app/hooks";
 import { addStock, Stock } from "../../features/stocks/stocksSlice";
 import { v4 } from "uuid";
@@ -31,7 +31,9 @@ const AddStock = () => {
       </div>
       <Modal isOpen={isOpen} onRequestClose={closeModal}>
         <h2>Add a Stock</h2>
-        <button onClick={closeModal}><GrClose/></button>
+        <button onClick={closeModal}>
+          <GrClose />
+        </button>
         <hr />
         <div className="container">
           <label htmlFor="ticker" className="text-danger">

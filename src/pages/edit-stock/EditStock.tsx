@@ -9,7 +9,7 @@ const EditStock = () => {
   const nav = useNavigate();
   const stocks = useAppSelector((state) => state.stocks.stocks);
   const dispatch = useAppDispatch();
-  
+
   const stockToEdit = stocks.find((s) => s.id === id);
   const [ticker, setTicker] = useState(stockToEdit?.ticker ?? "");
   const [name, setName] = useState(stockToEdit?.name ?? "");

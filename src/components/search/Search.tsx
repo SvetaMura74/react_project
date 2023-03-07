@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { followed_stocks } from "../../mock-data/stocks";
 import StockItem from "../../pages/stock-item/StockItem";
-import './Search.scss'
+import "./Search.scss";
 
 const Search = () => {
   const [query, setQuery] = useState(" ");
-  
 
   return (
     <div className="container">

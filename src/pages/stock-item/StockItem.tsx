@@ -1,9 +1,8 @@
 import { deleteStock, Stock } from "../../features/stocks/stocksSlice";
-import { BsPencil, BsTrash,BsInfoCircleFill } from "react-icons/bs";
+import { BsPencil, BsTrash, BsInfoCircleFill } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch } from "../../app/hooks";
 import Swal from "sweetalert2";
-
 
 const StockItem = (props: Stock) => {
   const nav = useNavigate();

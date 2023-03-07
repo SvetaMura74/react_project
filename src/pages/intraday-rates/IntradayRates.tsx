@@ -15,10 +15,10 @@ const IntradayRates = () => {
         let stocks = json.data as Intraday[];
         setStocks(stocks);
       })
-       .catch((e) => {
-    console.log(e);
-  })
-};
+      .catch((e) => {
+        console.log(e);
+      });
+  };
   return (
     <div>
       <h2 className="text-center">Intraday Rates</h2>
