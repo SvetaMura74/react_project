@@ -17,7 +17,7 @@ const About = () => {
           needed information-the data recieved throw the Rest API.
           <br /> To <b> add the stock</b> to the list,click the Add button,then
           input all the details and push "save the changes" button.After that
-          you can see the added item in the list.
+          you can see the added item in the list.<br/>To <b>search data by ticker/name</b> go to the Search page.
         </p>
       </div>
     </>
